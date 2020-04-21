@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 5fa9114ac6d9b5a4d8cb451fbe8b452e
+guid: 950b460f87dc9ed4ea6a2074b4cceb24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3083458974141701216
-    second: MarioLittleSheet_0
+      213: 2172394813006904609
+    second: Coins & Blocks_0
   - first:
-      213: -983464996030894077
-    second: MarioLittleSheet_1
+      213: 4718427396293447432
+    second: Coins & Blocks_1
   - first:
-      213: -4863332326635834185
-    second: MarioLittleSheet_2
+      213: 5523157250008856664
+    second: Coins & Blocks_2
   - first:
-      213: 267248087530021602
-    second: MarioLittleSheet_3
+      213: -4466012914602778435
+    second: Coins & Blocks_3
   - first:
-      213: 66367470321490504
-    second: MarioLittleSheet_4
+      213: -8655034643123851186
+    second: Coins & Blocks_4
   - first:
-      213: 2178673179996689717
-    second: MarioLittleSheet_5
+      213: -7701648558295157102
+    second: Coins & Blocks_5
+  - first:
+      213: 3092825084132234068
+    second: Coins & Blocks_6
+  - first:
+      213: -8220131693763907034
+    second: Coins & Blocks_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,12 +134,96 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MarioLittleSheet_0
+      name: Coins & Blocks_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e62a8e83a21e145ba74a148c231812
+      internalID: 2172394813006904609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins & Blocks_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9071e6e4e12ff49ab1a058fd0e72c2
+      internalID: 4718427396293447432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins & Blocks_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0d17f8f6e09974cbff1e52f6c01994
+      internalID: 5523157250008856664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins & Blocks_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac89be6c2e70e1468a0861aedd8b783
+      internalID: -4466012914602778435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coins & Blocks_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 12
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -142,40 +232,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95d5aa8a9b478504d91dc1c0c4ea9eb5
-      internalID: 3083458974141701216
+      spriteID: 1a8bdae43f1fd5044b61dcf306b2c53b
+      internalID: -8655034643123851186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarioLittleSheet_1
+      name: Coins & Blocks_5
       rect:
         serializedVersion: 2
         x: 16
         y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc1c9422133dfa848ada6dc5ecae4ea6
-      internalID: -983464996030894077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MarioLittleSheet_2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 11
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,19 +253,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f90a00bf0b909e4d870fefa83ce7b67
-      internalID: -4863332326635834185
+      spriteID: 1916397586d45c545aaaaa4e6f13914a
+      internalID: -7701648558295157102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarioLittleSheet_3
+      name: Coins & Blocks_6
       rect:
         serializedVersion: 2
-        x: 49
+        x: 32
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,40 +274,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b155b6b91cf75214c9b7f3562902c36e
-      internalID: 267248087530021602
+      spriteID: 7ac3eca512b0e3e4bb14cbb111bb936c
+      internalID: 3092825084132234068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarioLittleSheet_4
+      name: Coins & Blocks_7
       rect:
         serializedVersion: 2
-        x: 67
-        y: 1
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42277efe787a9594b91f060926670dbc
-      internalID: 66367470321490504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MarioLittleSheet_5
-      rect:
-        serializedVersion: 2
-        x: 83
+        x: 48
         y: 0
-        width: 19
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,8 +295,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 115f649f695094b4ca06c559cb97144c
-      internalID: 2178673179996689717
+      spriteID: 2e6b3f40c0cf28b439214428f7626cf0
+      internalID: -8220131693763907034
       vertices: []
       indices: 
       edges: []
