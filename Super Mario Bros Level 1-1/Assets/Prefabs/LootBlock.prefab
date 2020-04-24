@@ -364,6 +364,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4850570437774961376, guid: 4f7ef195699ad744698114906c6ea299,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7209757488631530297, guid: 4f7ef195699ad744698114906c6ea299,
         type: 3}
       propertyPath: m_Name
@@ -400,11 +405,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 1233837540541729770, guid: 7e294c9bd0367e14a904a0152b54c4f3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515975429718059414, guid: 7e294c9bd0367e14a904a0152b54c4f3,
         type: 3}

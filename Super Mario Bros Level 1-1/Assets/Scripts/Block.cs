@@ -31,6 +31,8 @@ public class Block : MonoBehaviour
                 GetComponent<BoxCollider2D>().enabled = false;
                 blue.SetActive(true);
                 ground.SetActive(false);
+                collision.GetComponentInParent<Rigidbody2D>().velocity = Vector3.zero;
+                collision.GetComponentInParent<PlayerMovement>().isJumping = false;
             }
         }
     }

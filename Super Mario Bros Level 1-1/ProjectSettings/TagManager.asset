@@ -8,6 +8,7 @@ TagManager:
   - Feet
   - Enemy
   - Mushroom
+  - Ground
   layers:
   - Default
   - TransparentFX

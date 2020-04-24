@@ -32,7 +32,6 @@ public class LootBlock : MonoBehaviour
             if (haveMushroom)
             {
                 mushroom.SetActive(true);
-                Destroy(mushroom.GetComponent<Animator>());
             }
             else
                 coin.SetActive(true);

@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     internal bool extraLife;
 
     public float speed;             //this is the speed our player will move
+    public float initialSpeed;             //this is the initial speed our player will move
     private Rigidbody2D rb;         //variable to store Rigidbody2D component
     private Animator anim;         //variable to store Rigidbody2D component
     private SpriteRenderer sprite;         //variable to store Rigidbody2D component
@@ -20,7 +21,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float jumpTime;          //time till which we will apply jump force
     private float jumpTimeCounter;  //time to count how long player has pressed jump key
-    private bool isJumping;         //bool to tell if player is jumping or not
+    public bool isJumping;         //bool to tell if player is jumping or not
 
     // Use this for initialization
     void Start ()
@@ -28,6 +29,9 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();   //get reference to 	Rigidbody2D component
         anim = GetComponent<Animator>();   //get reference to 	Rigidbody2D component
         sprite = GetComponent<SpriteRenderer>();   //get reference to 	Rigidbody2D component
+
+        initialSpeed = speed;
+
     }
 
     //as we are going to use physics for our player , we must use FixedUpdate for it
@@ -56,6 +60,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         //here we set the isGrounded
         isGrounded = Physics2D.OverlapCircle(feetPos.position, circleRadius, whatIsGround);
+        
         //we check if isGrounded is true and we pressed Space button
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))  
         {
@@ -98,7 +103,7 @@ public class PlayerMovement : MonoBehaviour {
             {
                 extraLife = false;
                 anim.SetBool("ExtraLife", false);
-                rb.AddForce(new Vector2 (-2, 5));
+                rb.AddForce(new Vector2 (sprite.flipX?-200:200, 200));
             }
             else
             {
@@ -106,14 +111,42 @@ public class PlayerMovement : MonoBehaviour {
                 Time.timeScale = 0;
 
             }
+
+            return;
         }
+
         if (collision.gameObject.tag == "Mushroom")
         {
             anim.SetBool("ExtraLife", true);
 
             Destroy(collision.gameObject);
             extraLife = true;
+            return;
         }
+
+        //To avoid air colisions ock movement
+        if (collision.gameObject.tag == "Ground")
+        {
+            speed = initialSpeed;
+            return;
+        }
+
+
+        //To avoid air colisions ock movement
+        if (collision.contacts[0].normal != Vector2.up && !isGrounded)
+        {
+            speed = 0;
+        }
+        else
+        {
+            speed = initialSpeed;
+        }
+
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+            speed = initialSpeed;
 
     }
 

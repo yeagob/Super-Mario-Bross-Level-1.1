@@ -21,7 +21,9 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        speed *= -1;
+        //Añadido a posteriori
+        if(collision.contacts[0].normal == Vector2.right || collision.contacts[0].normal == Vector2.left)
+            speed *= -1;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,7 +34,7 @@ public class Enemy : MonoBehaviour
             GetComponent<Animator>().Play("Die");
             gameObject.tag = "Untagged";
             Destroy(gameObject, 1);
-            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, 5));
+            collision.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(0, 300));
         }
     }
 }
